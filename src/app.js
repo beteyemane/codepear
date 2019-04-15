@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { setPusherClient } from 'react-pusher'
+import Pusher from 'pusher-js'
 import './style.scss'
 
 class App extends React.Component{
@@ -7,6 +9,13 @@ class App extends React.Component{
     super()
 
 
+  }
+
+  componentDidMount(){
+    const pusherClient = new Pusher({
+    })
+
+    setPusherClient(pusherClient)
   }
 
   render(){
