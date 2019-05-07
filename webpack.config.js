@@ -20,7 +20,8 @@ module.exports = {
     hot: true,
     open: true,
     port: 4000,
-    watchContentBase: true
+    watchContentBase: true,
+    historyApiFallback: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

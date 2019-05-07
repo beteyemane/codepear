@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import TextEditor from '../TextEditor'
 
 class Home extends React.Component{
   constructor() {
@@ -15,7 +14,6 @@ class Home extends React.Component{
     return(
       <section id="home">
         <h1>Codepear</h1>
-        <TextEditor />
       </section>
     )
   }
